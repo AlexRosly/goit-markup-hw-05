@@ -739,6 +739,7 @@ address .contac-info {
   position: absolute;
   top: 8px;
   right: 8px;
+  cursor: pointer;
 
   width: 30px;
   height: 30px;
