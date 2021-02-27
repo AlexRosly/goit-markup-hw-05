@@ -44,7 +44,7 @@
     <section class="hero">
         <div class="container">
             <h1 class="hero-title">Эффективные решения <br /> для вашего бизнеса</h1>
-            <button type="submit" class="btn">Заказать услугу</button>
+            <button type="submit" class="btn" data-modal-open>Заказать услугу</button>
         </div>
     </section>
 
@@ -112,16 +112,32 @@
             <h2 class="work-title">Чем мы занимаемся</h2>
             <ul class="work-title-pr">
                 <li class="item">
-                    <a href=""><img src="./images/desktopapp.jpg" 
-                        alt="Разработка приложений для ПК" width="370" height="294"></a>
+                    <a href="">
+                        <div class="thumb-work">
+                            <img src="./images/desktopapp.jpg" 
+                            alt="Разработка приложений для ПК" width="370" height="294">
+                            <p class="work-discrition">Десктопные приложения</p>
+                        </div>
+                    </a>
+                        
                 </li>
                 <li class="item">
-                    <a href=""><img src="./images/mobileapp.jpg" 
-                        alt="Разработка мобильных приложений" width="370" height="294"></a>
+                    <a href="">
+                        <div class="thumb-work">
+                            <img src="./images/mobileapp.jpg" 
+                            alt="Разработка мобильных приложений" width="370" height="294">
+                            <p class="work-discrition">Мобильные приложения</p>
+                        </div>
+                    </a>
                 </li>
                 <li class="item">
-                    <a href=""><img src="./images/design.jpg" 
-                        alt="Дизайн" width="370" height="294"></a>
+                    <a href="">
+                        <div class="thumb-work">
+                            <img src="./images/design.jpg" 
+                            alt="Дизайн" width="370" height="294">
+                            <p class="work-discrition">Дизайнерские решения</p>
+                        </div>
+                    </a>
                 </li>
             </ul>
         </div>
@@ -408,5 +424,17 @@
             </div>
         </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="close-icon" data-modal-close>
+                <svg width="11" height="11">
+                    <use href="./images/webstudio-icon.svg#icon-close"></use>
+                </svg>
+            </button>
+        </div>
+    </div>    
+
+    <script src="./js/modal.js"></script>
 </body>
 </html>
